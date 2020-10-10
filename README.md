@@ -4,6 +4,9 @@
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/releases)
 [![GitHub](https://img.shields.io/github/license/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/blob/master/LICENSE)
 
+The native request and response objects in node's http server contain a lot of information that
+is not commonly used. This library will return a new object, with only useful fields.
+
 ## Example Usage
 ### With callbacks
 ```javascript
@@ -12,6 +15,23 @@ const finalStream = require('tidy-http/cleanRequest');
 const server = http.createServer((request, response) => {
   const cleanedRequest = clean.cleanRequest(request);
 })
+
+/*
+{
+  complete: false,
+  upgrade: false,
+  aborted: false,
+  headers: {
+    host: 'localhost:8000',
+    connection: 'close'
+  },
+  trailers: {},
+  url: '/',
+  method: 'GET',
+  statusCode: null,
+  statusMessage: null
+}
+*/
 ```
 
 ## License
