@@ -52,7 +52,6 @@ test('response is cleaned', t => {
       _header: cleanedResponse._header.includes('HTTP/1.1 200 OK\r\nContent-Type: text/html') && cleanedResponse._header,
       _headerSent: false,
       writable: true,
-      destroyed: false,
       finished: false,
       statusCode: 200,
       statusMessage: 'OK'
