@@ -7,6 +7,11 @@
 The native request and response objects in node's http server contain a lot of information that
 is not commonly used. This library will return a new object, with only useful fields.
 
+## Installation
+```bash
+npm install tidy-http
+```
+
 ## Example Usage
 ### With callbacks
 ```javascript
