@@ -1,0 +1,27 @@
+{
+  "name": "cleaner",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/markwylde/tidy-http.svg?branch=master)](https://travis-ci.org/markwylde/tidy-http) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markwylde/tidy-http) [![GitHub package.json version](https://img.shields.io/github/package-json/v/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/releases) [![GitHub](https://img.shields.io/github/license/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/blob/master/LICENSE)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^5.0.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markwylde/tidy-http.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markwylde/tidy-http/issues"
+  },
+  "homepage": "https://github.com/markwylde/tidy-http#readme"
+}
