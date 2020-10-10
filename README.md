@@ -13,7 +13,6 @@ npm install tidy-http
 ```
 
 ## Example Usage
-### With callbacks
 ```javascript
 const { tidyRequest } = require('tidy-http');
 
