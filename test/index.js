@@ -1,13 +1,14 @@
 const test = require('tape');
 const http = require('http');
 
-const clean = require('../');
+const tidyRequest = require('../tidyRequest');
+const tidyResponse = require('../tidyResponse');
 
 test('request is cleaned', t => {
   t.plan(2);
 
   const server = http.createServer((request, response) => {
-    const cleanedRequest = clean.cleanRequest(request);
+    const cleanedRequest = tidyRequest(request);
 
     response.writeHead(200, { 'Content-Type': 'text/html' });
 
@@ -42,7 +43,7 @@ test('response is cleaned', t => {
   const server = http.createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'text/html' });
 
-    const cleanedResponse = clean.cleanResponse(response);
+    const cleanedResponse = tidyResponse(response);
 
     t.ok(cleanedResponse.getOrigialResponse);
     delete cleanedResponse.getOrigialResponse;

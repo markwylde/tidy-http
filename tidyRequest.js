@@ -1,4 +1,4 @@
-function cleanRequest (request) {
+function tidyRequest (request) {
   return {
     getOrigialRequest: () => request,
     complete: request.complete,
@@ -13,4 +13,4 @@ function cleanRequest (request) {
   };
 }
 
-module.exports = cleanRequest;
+module.exports = tidyRequest;

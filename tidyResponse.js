@@ -1,4 +1,4 @@
-function cleanResponse (response) {
+function tidyResponse (response) {
   return {
     getOrigialResponse: () => response,
 
@@ -12,4 +12,4 @@ function cleanResponse (response) {
   };
 }
 
-module.exports = cleanResponse;
+module.exports = tidyResponse;

@@ -15,10 +15,12 @@ npm install tidy-http
 ## Example Usage
 ### With callbacks
 ```javascript
-const finalStream = require('tidy-http/cleanRequest');
+const { tidyRequest } = require('tidy-http');
 
 const server = http.createServer((request, response) => {
-  const cleanedRequest = clean.cleanRequest(request);
+  const tidiedRequest = tidyRequest(request);
+
+  console.log(tidiedRequest);
 })
 
 /*
