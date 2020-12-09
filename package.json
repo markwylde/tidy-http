@@ -1,6 +1,6 @@
 {
   "name": "tidy-http",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "[![Build Status](https://travis-ci.org/markwylde/tidy-http.svg?branch=master)](https://travis-ci.org/markwylde/tidy-http) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/markwylde/tidy-http) [![GitHub package.json version](https://img.shields.io/github/package-json/v/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/releases) [![GitHub](https://img.shields.io/github/license/markwylde/tidy-http)](https://github.com/markwylde/tidy-http/blob/master/LICENSE)",
   "main": "index.js",
   "scripts": {
