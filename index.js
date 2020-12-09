@@ -1,4 +1,4 @@
 module.exports = {
-  cleanRequest: require('./cleanRequest'),
-  cleanResponse: require('./cleanResponse')
+  tidyRequest: require('./tidyRequest'),
+  tidyResponse: require('./tidyResponse')
 };
